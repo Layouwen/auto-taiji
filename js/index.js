@@ -1,5 +1,6 @@
 let js_content = document.querySelector('.content')
 let js_style = document.querySelector('.js_style')
+let isTouchDevice = 'ontouchstart' in document.documentElement
 
 let str = `
 /* 你好，我是一名前端工程师，因这学期课程接触到了前端
@@ -69,7 +70,10 @@ let run = () => {
         js_style.innerHTML = str.substring(0, n)
         js_content.innerHTML = contentStr
         n++;
-        window.scrollTo(0, 99999);
+        // if (isTouchDevice){
+
+        // }
+        //     window.scrollTo(0, 99999);
         js_content.scrollTo(0, 99999)
         if (n < str.length) {
             run()
