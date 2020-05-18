@@ -55,9 +55,10 @@ let str = `
 let contentStr = ''
 let n = 0
 let speed = 0
+let time
 
 let run = () => {
-    setTimeout(() => {
+    time = setTimeout(() => {
         if (str[n] === '\n') {
             contentStr += '<br>'
         } else if (str[n] === ' ') {
@@ -72,14 +73,46 @@ let run = () => {
         js_content.scrollTo(0, 99999)
         if (n < str.length) {
             run()
+        } else {
+            n = 0
+            contentStr = ''
+            js_start.innerHTML = '开始'
+            js_start.className = 'start'
         }
     }, speed)
 }
 
-run()
-
 let js_slow = document.querySelector('.slow')
+let js_middling = document.querySelector('.middling')
+let js_quick = document.querySelector('.quick')
+let js_start = document.querySelector('#start')
 
 js_slow.addEventListener('click', () => {
-    console.log('hi')
+    if (speed !== 100) {
+        speed = 200
+    }
+})
+
+js_middling.addEventListener('click', () => {
+    if (speed !== 50) {
+        speed = 50
+    }
+})
+
+js_quick.addEventListener('click', () => {
+    if (speed !== 0) {
+        speed = 0
+    }
+})
+
+js_start.addEventListener('click', () => {
+    if (js_start.innerHTML === '开始') {
+        run()
+        js_start.innerHTML = '暂停'
+        js_start.className = ''
+    } else {
+        js_start.innerHTML = '开始'
+        clearTimeout(time)
+        js_start.className = 'start'
+    }
 })

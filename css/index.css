@@ -45,6 +45,10 @@
     overflow: auto;
 }
 
+.container .buttons .start {
+    background: green;
+}
+
 .buttons {
     position: absolute;
     top: 5px;
