@@ -55,7 +55,7 @@ let str = `
 
 let contentStr = ''
 let n = 0
-let speed = 0
+let speed = 50
 let time
 
 let run = () => {
