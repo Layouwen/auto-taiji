@@ -18,6 +18,7 @@ let str = `
     width: 400px;
     height: 400px;
     border-radius: 50%;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .5);
     background: linear-gradient(to right, #ffffff 0%, #ffffff 50%, #000000 50%, #000000 100%);
     animation: turn 2s linear infinite;
 }
