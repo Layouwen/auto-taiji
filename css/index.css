@@ -17,7 +17,7 @@
     overflow: auto;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 639px) {
 
     .container .content,
     .container .show {
@@ -42,6 +42,20 @@
         font-size: 14px;
         line-height: 50px;
     }
+
+    .show .bigCircle {
+        width: 240px;
+        height: 240px;
+    }
+
+    .show .bigCircle::before,
+    .show .bigCircle::after {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 812px) {
 
     .show .bigCircle {
         width: 240px;
