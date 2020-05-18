@@ -71,10 +71,6 @@ let run = () => {
         js_style.innerHTML = str.substring(0, n)
         js_content.innerHTML = contentStr
         n++;
-        // if (isTouchDevice){
-
-        // }
-        //     window.scrollTo(0, 99999);
         js_content.scrollTo(0, 99999)
         if (n < str.length) {
             run()
