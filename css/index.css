@@ -51,12 +51,15 @@
 
 .buttons {
     position: absolute;
-    top: 5px;
-    left: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 60px;
+    height: 370px;
+    background: red;
 }
 
 .buttons>div {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     width: 40px;
     height: 80px;
     line-height: 80px;
