@@ -55,7 +55,7 @@ let str = `
 
 let contentStr = ''
 let n = 0
-let speed = 10
+let speed = 0
 let time
 
 let run = () => {
@@ -104,8 +104,8 @@ js_middling.addEventListener('click', () => {
 })
 
 js_quick.addEventListener('click', () => {
-    if (speed !== 10) {
-        speed = 10
+    if (speed !== 0) {
+        speed = 0
     }
 })
 
