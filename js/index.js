@@ -13,6 +13,15 @@ let str = `
 
 下面展示我的一个小想法，实现一个PC/PE端自适应的太极 */
 
+@keyframes turn {
+    0%{
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 .bigCircle {
     position: relative;
     width: 400px;
@@ -20,7 +29,6 @@ let str = `
     border-radius: 50%;
     box-shadow: 0 0 3px rgba(0, 0, 0, .5);
     background: linear-gradient(to right, #ffffff 0%, #ffffff 50%, #000000 50%, #000000 100%);
-    animation: turn 2s linear infinite;
 }
 
 .bigCircle::before,
@@ -44,14 +52,11 @@ let str = `
     background: radial-gradient(ellipse at center, #ffffff 0%, #ffffff 25%, #000000 25%, #000000 100%);
 }
 
-@keyframes turn {
-    100% {
-        transform: rotate(360deg);
-    }
+.bigCircle {
+    animation: turn 2s linear infinite;
 }
 
 /* 希望这个想法对刚学习动画和CSS的你有所帮助 */
-
 `
 
 let contentStr = ''
