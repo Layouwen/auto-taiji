@@ -1,103 +1,103 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin    : 0;
+  padding   : 0;
+  box-sizing: border-box;
 }
 
 .content,
 .show {
-    float: left;
-    width: 50%;
-    height: 100vh;
+  float : left;
+  width : 50%;
+  height: 100vh;
 }
 
 .content {
-    padding-left: 60px;
-    word-wrap: break-word;
-    overflow: auto;
+  padding-left: 60px;
+  word-wrap   : break-word;
+  overflow    : auto;
 }
 
 @media screen and (max-width: 639px) {
 
-    .container .content,
-    .container .show {
-        width: 100%;
-        height: 50vh;
-    }
+  .container .content,
+  .container .show {
+    width : 100%;
+    height: 50vh;
+  }
 
-    .container .content {
-        padding-left: 50px;
-        width: 100%;
-        height: 50vh;
-    }
+  .container .content {
+    padding-left: 50px;
+    width       : 100%;
+    height      : 50vh;
+  }
 
-    .container .buttons {
-        width: 50px;
-        height: 250px;
-    }
+  .container .buttons {
+    width : 50px;
+    height: 250px;
+  }
 
-    .container .buttons>div {
-        width: 30px;
-        height: 50px;
-        font-size: 14px;
-        line-height: 50px;
-    }
+  .container .buttons>div {
+    width      : 30px;
+    height     : 50px;
+    font-size  : 14px;
+    line-height: 50px;
+  }
 
-    .show .bigCircle {
-        width: 240px;
-        height: 240px;
-    }
+  .show .bigCircle {
+    width : 240px;
+    height: 240px;
+  }
 
-    .show .bigCircle::before,
-    .show .bigCircle::after {
-        width: 120px;
-        height: 120px;
-    }
+  .show .bigCircle::before,
+  .show .bigCircle::after {
+    width : 120px;
+    height: 120px;
+  }
 }
 
 @media screen and (max-width: 812px) {
 
-    .show .bigCircle {
-        width: 240px;
-        height: 240px;
-    }
+  .show .bigCircle {
+    width : 240px;
+    height: 240px;
+  }
 
-    .show .bigCircle::before,
-    .show .bigCircle::after {
-        width: 120px;
-        height: 120px;
-    }
+  .show .bigCircle::before,
+  .show .bigCircle::after {
+    width : 120px;
+    height: 120px;
+  }
 }
 
-.container .buttons .start {
-    background: green;
+.container .buttons #active {
+  background: green;
 }
 
 .buttons {
-    position: absolute;
-    padding-top: 10px;
-    padding-left: 10px;
-    width: 60px;
-    height: 370px;
+  position    : absolute;
+  padding-top : 10px;
+  padding-left: 10px;
+  width       : 60px;
+  height      : 370px;
 }
 
 .buttons>div {
-    margin-bottom: 10px;
-    width: 40px;
-    height: 80px;
-    line-height: 80px;
-    text-align: center;
-    background: gray;
-    cursor: pointer;
+  margin-bottom: 10px;
+  width        : 40px;
+  height       : 80px;
+  line-height  : 80px;
+  text-align   : center;
+  background   : gray;
+  cursor       : pointer;
 }
 
 .buttons>div:hover {
-    background: rgb(195, 195, 195);
+  background: rgb(195, 195, 195);
 }
 
 .show {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #FAFBFC;
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  background     : #FAFBFC;
 }
